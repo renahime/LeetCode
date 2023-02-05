@@ -21,34 +21,34 @@ var numIslands = function (grid) {
   return islandCount
 }
 
-getNeighbors(row, col, matrix) {
-  const neighbors = [];
+// getNeighbors(row, col, matrix) {
+//   const neighbors = [];
 
-  // Check top
-  if (row > 0 && matrix[row - 1][col] === "1") {
-    neighbors.push([row - 1, col]);
+//   // Check top
+//   if (row > 0 && matrix[row - 1][col] === "1") {
+//     neighbors.push([row - 1, col]);
 
-  };
+//   };
 
-  // Check right
-  if (col < matrix[0].length - 1 && matrix[row][col + 1] === "1") {
-    neighbors.push([row, col + 1]);
+//   // Check right
+//   if (col < matrix[0].length - 1 && matrix[row][col + 1] === "1") {
+//     neighbors.push([row, col + 1]);
 
-  };
-  // Check bottom
-  if (row < matrix.length - 1 && matrix[row + 1][col] === "1") {
-    neighbors.push([row + 1, col]);
+//   };
+//   // Check bottom
+//   if (row < matrix.length - 1 && matrix[row + 1][col] === "1") {
+//     neighbors.push([row + 1, col]);
 
-  }
+//   }
 
-  // Check left
-  if (col > 0 && matrix[row][col - 1] === "1") {
-    neighbors.push([row, col - 1]);
+//   // Check left
+//   if (col > 0 && matrix[row][col - 1] === "1") {
+//     neighbors.push([row, col - 1]);
 
-  }
-  return neighbors;
+//   }
+//   return neighbors;
 
-}
+// }
 
 
 // var numIslands = function(grid) {
